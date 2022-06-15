@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CV#3. CV. Cross-Check</title>
 </head>
 <body>
+    <div class="page">
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#intro">Home</a>
+                    <a class="nav__link" href="#" data-scroll="#about">About me</a>
+                    <a class="nav__link" href="#" data-scroll="#skills">Skills</a>
+                    <a class="nav__link" href="#" data-scroll="#code">Code style</a>
+                    <a class="nav__link" href="#" data-scroll="#contacts">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="intro" id="intro" data-scrollspy="#intro">
+
+                    <div class="intro__name">Alexey <br>Boyko<br></div>
+                    <div class="intro__age">Junior Frontend Developer
+                        <br>31 years old, Novorossiysk<br>
+                    </div>
+                    <div class="intro__logo">R S <span>| SCHOOL</span></div>
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">2</span>
+                        <span class="burger__line">3</span>
+                        <span class="burger__line">4</span>
+                    </button>
+                </div>
+                <img class="img img--full" src="img/photo_2022-06-07_388.jpg" alt="">
+                <img class="img img--mobil" src="img/photo_2022-06-07_18-45-41.jpg" alt="">
+            </div>
+        </section>
+
+        <main class="section section--gray" id="about" data-scrollspy="#about" data-aos="fade-right">
+            <div class="container">
+                <h1 class="title-midlle">About me</h1>
+                <p class="article-midlle">Hi, I'm Alexey – Junior Frontend Developer from Novorossiysk.
+                    <br>I'm interested in web-developer and everything connected with it.</br>
+                </p>
+
+                <p class="article-midlle">He began his career in IT as a tester in a small startup, where he tested additional functions (widgets) developed for
+                AmoCRM, as well as other CRM solutions for optimizing business processes of enterprises.
+                </p>
+
+                <p class="article-midlle">In the process, I learned HTML, CSS and JS at the level of creating simple sites, and also received training in QA
+                testing from mentor Nikolay Krotov and the course “SQL and PostgreSQL for beginners” from BeOnMax authored by Ilya
+                Fofanov.
+                </p>
+
+                <p>Today I hold the position of a WEB tester, combining testing duties with the development of web applications on Vue 3.</p>
+            </div>
+        </main>
+
+        <section class="section" id="skills" data-scrollspy="#skills">
+            <div class="container">
+                <h2 class="title-skills">Hard skills</h2>
+                <div class="skills-icons">
+                    <img class="img skills-img" src="img/html-5-170.png" alt="" data-aos="fade-right" data-aos-delay="100">
+                    <img class="img skills-img" src="img/css-3-170.png" alt="" data-aos="fade-right" data-aos-delay="150">
+                    <img class="img skills-img" src="img/js-170.png" alt="" data-aos="fade-right" data-aos-delay="200">
+                    <img class="img skills-img" src="img/github-170.png" alt="" data-aos="fade-right" data-aos-delay="250">
+                </div>
+            </div>
+        </section>
+
+
+         <section class="section section--gray" id="code" data-scrollspy="#code">
+            <div class="container">
+                <h2 class="title-img">Code examples</h2>
+
+                <div class="code-container">
+                    <pre>
+<code>
+<span class="code-color-pink">let</span> arr <span>=</span> <span class="code-color-blue">['asdd'</span>, <span class="code-color-blue">'qwedsf'</span>, <span class="code-color-blue">'rty']</span>;<br>
+<br>
+<span class="code-color-pink">let</span> result <span class="code-color-pink">=</span> arr<span class="code-color-pink">.</span><span class="code-color-green">map</span><span class="code-color-blue">(</span><span></span class="code-color-pink">function</span> <span class="code-color-pink">(</span><span>elem</span><span class="code-color-pink">)</span><span class="code-color-pink">{</span><br>
+    <span class="code-color-pink">let</span> str <span class="code-color-pink">=</span> <span class="code-color-blue">''</span>;<br>
+    <span class="code-color-pink">for</span> <span>(</span><span class="code-color-pink">let</span> i <span class="code-color-pink">=</span> elem<span class="code-color-pink">.</span><span class="code-color-green">length</span></span><span>.</span> <span class="code-color-pink">-</span> 1; i <span class="code-color-pink">>=</span> <span>0</span>; i<span class="code-color-pink">--</span><span>){</span><br>
+        str <span class="code-color-pink">+=</span> elem<span class="code-color-blue">[</span>i<span class="code-color-blue">]</span>;<br>
+    <span>}</span><br>
+    <span class="code-color-pink">return</span> str;<br>
+<span class="code-color-pink">}</span><span class="code-color-blue">)</span>;
+</code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacts" data-scrollspy="#contacts">
+            <div class="container">
+                <h2 class="title-midlle">Contacts</h2>
+                <p class="article-midlle">Want to know more or just chat?<br>You are welcome!</br></p>
+
+                <div class="btn-block">
+                    <button class="btn">Send message</button>
+                </div>
+
+                <img class="img img--contacts" src="img/Group 12.png" alt="">
+
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>Like me on
+                    <br> LinkedIn, Instagram, Behance, Dribble </br>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
